@@ -1,0 +1,34 @@
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+
+.input__box {
+  display: block;
+  width: 500px;
+  border-radius: 50px;
+  padding: 15px 25px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+.input__submit {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0;
+  border: none;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+  background-color: #2f74c0;
+}
+
+.input__submit:active {
+  transform: scale(0.8);
+}
