@@ -1,8 +1,7 @@
 .input {
-  display: flex;
-  width: 90%;
+  width: 500px;
   position: relative;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .input__box {
@@ -21,6 +20,7 @@
   height: 35px;
   margin: 12px;
   border-radius: 50px;
+  top: 0;
   right: 0;
   border: none;
   color: white;

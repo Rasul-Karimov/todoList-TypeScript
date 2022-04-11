@@ -3,6 +3,7 @@ import "./style.css"
 import {Todo} from "../module"
 import { addToTodo } from '../redux/action'
 import { useDispatch } from 'react-redux'
+import { v4 as uuid } from 'uuid';
 interface Props{
     todo:string,
     setTodo:React.Dispatch<React.SetStateAction<string>>
@@ -12,12 +13,12 @@ function InputFieltd({todo,setTodo,}:Props) {
     const dispatch = useDispatch();
 
     
-let id = 0;
+
   const handleAdd = (e:  React.FormEvent<EventTarget>,)=>{
       e.preventDefault();
+      const id: string = uuid()
       dispatch(addToTodo({todo:todo,id: id, isDone: false}))
       setTodo("");
-      id = id +1
   }
   return (                                                                                                                                                                                       
     <div>
